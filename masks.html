@@ -26,7 +26,7 @@
 </pre>
 </p>
 
-<p>We now that bits 0-7 are zero, bits 8-11 are one, and the remaining bits are zero. We can start by trying to create a number with four ones, then shifting them into place. Consider the following:
+<p>We see that bits 0-7 (indexed starting from the right) are zero, bits 8-11 are one, and the remaining bits are zero. We can start by trying to create a number with four ones, then shifting them into place. Consider the following:
 <pre>
     1 << 4              //   16 // 0b0000'0000'0001'0000
     (1 << 4) - 1        //   15 // 0b0000'0000'0000'1111
