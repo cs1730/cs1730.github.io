@@ -8,11 +8,20 @@
 
 <h1>cs1730</h1>
 
-<p>testing</p>
-
 <p>In computer science, a <strong>mask</strong> is data that is used for bitwise operations, particularly in a bit field.</p>
 
 <p>Using a mask, multiple bits in a variable can be set either on, off or inverted from on to off (or vice versa) in a single bitwise operation.</p>
+
+<p>To turn certain bits on, the bitwise OR operation can be used, following the principle that Y | 1 = 1 and Y | 0 = Y.</p>
+
+<p>Therefore, to make sure a bit is on, OR can be used with a 1. To leave a bit unchanged, OR is used with a 0.
+  Example: Masking "on" the higher bits (bits 4, 5, 6, 7), leaving the lower bits (bits 0, 1, 2, 3) unchanged.</p>
+
+<pre>
+    0b'1001'0101'1010'0101
+  | 0b'1111'0000'1111'0000
+  = 0b'1111'0101'1111'0101
+</pre>
 
 <hr/>
 
